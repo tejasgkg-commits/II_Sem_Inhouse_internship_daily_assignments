@@ -1,1 +1,63 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Swap Assignment</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Bonus: Custom CSS Improvements */
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            border: none;
+            border-radius: 10px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .card-title::first-letter {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-6">
+                <h2>Dynamic Posts Directory 
+                    <!-- Bonus: Card Count Badge -->
+                    <span id="card-count" class="badge bg-primary fs-6 align-middle">0</span>
+                </h2>
+            </div>
+            <!-- Bonus: Search/Filter Functionality -->
+            <div class="col-md-6">
+                <input type="text" id="search-bar" class="form-control" placeholder="Search posts by title...">
+            </div>
+        </div>
+
+        <!-- Loading State Indicator -->
+        <div id="loading-spinner" class="text-center my-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2 text-muted">Fetching latest posts...</p>
+        </div>
+
+        <!-- Error Handling Container -->
+        <div id="error-message" class="alert alert-danger d-none" role="alert"></div>
+
+        <!-- Bootstrap Card Grid -->
+        <div id="posts-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
+    </div>
+
+    <!-- JavaScript File Linking -->
+    <script src="app.js"></script>
+</body>
+</html>
