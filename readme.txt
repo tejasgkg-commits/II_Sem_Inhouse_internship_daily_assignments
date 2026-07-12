@@ -1,64 +1,49 @@
-# Student Assignment Submission
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+<center>
+<h2>Registration Form</h2>
+</center>
+<form>
 
-## Instructions
+<label>Full Name</label><br>
+<input type="text" placeholder="Enter Full Name"><br><br>
 
-1. Fork this repository.
-2. Create a folder with your **Roll Number**.
-3. Inside your Roll Number folder, create folders for each day (Day-1, Day-2, Day-3, ...).
-4. Upload the respective day's assignment files inside the corresponding folder.
-5. Commit and push your changes.
-6. Create a Pull Request.
+<label>Email</label><br>
+<input type="email" placeholder="Enter Email"><br><br>
 
-## Folder Structure
+<label>Phone Number</label><br>
+<input type="tel" placeholder="Enter Phone Number"><br><br>
 
-```
-Student-Assignments/
-│── README.md
-│
-├── 25ESKCS001/
-│   ├── Day-1/
-│   │   ├── index.html
-│   │   ├── style.css
-│   │   └── script.js
-│   │
-│   ├── Day-2/
-│   │   ├── index.html
-│   │   ├── style.css
-│   │   └── script.js
-│   │
-│   └── Day-3/
-│       └── ...
-│
-├── 25ESKCS002/
-│   ├── Day-1/
-│   ├── Day-2/
-│   └── Day-3/
-│
-└── 25ESKCS003/
-    ├── Day-1/
-    ├── Day-2/
-    └── Day-3/
-```
+<label>Birth Date</label><br>
+<input type="date"><br><br>
 
-### Example
+<label>Gender</label><br>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<br><br>
 
-If your Roll Number is **25ESKCS001**, your submission should look like this:
+<label>Address</label><br>
+<input type="text" placeholder="Street Address"><br><br>
 
-```
-25ESKCS001/
-├── Day-1/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-├── Day-2/
-│   ├── index.html
-│   └── style.css
-└── Day-3/
-    └── assignment files
-```
+<label>State</label><br>
+<input type="text" placeholder="Enter State"><br><br>
 
-> **Important**
-> - Do not modify or delete another student's folder.
-> - Always upload files in the correct Day folder.
-> - Use meaningful file names.
-> - Create one Pull Request after completing your submission (or as instructed by the faculty).
+
+<label>City</label><br>
+<input type="text" placeholder="Enter City"><br><br>
+
+<label>Pin Code</label><br>
+<input type="text" placeholder="Enter Pin Code"><br><br>
+
+<button type="submit">SUBMIT</button>
+
+</form>
+
+</body>
+</html># Student Assignment Submission
+
