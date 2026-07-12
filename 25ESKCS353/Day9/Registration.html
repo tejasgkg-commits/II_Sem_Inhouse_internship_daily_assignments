@@ -1,1 +1,60 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<center>
+<h2>Registration Form</h2>
+
+<form action="registration.php" method="post">
+<div>
+    <label>Full Name</label><br>
+    <input type="text" name="name" placeholder="Enter Full Name"><br><br>
+</div>
+<div>
+    <label>Email</label><br>
+    <input type="email" name="email" placeholder="Enter Email"><br><br>
+</div>
+<div>
+    
+    <label>Roll Number</label><br>
+    <input type="text" name="roll_number" placeholder="Enter Roll number" ><br><br>
+</div>
+<div>
+    
+    <label>CGPA</label><br>
+    <input type="text" name="cgpa" placeholder="Enter cgpa" ><br><br>
+</div>
+<div>
+    <label>Phone Number</label><br>
+    <input type="tel" name="phone" placeholder="Enter Phone Number"><br><br>
+</div>
+<div>
+    
+    <label>Birth Date</label><br>
+    <input type="date" name="dob" ><br><br>
+</div>
+<div>
+    <label>Branch</label>
+    <select name="branch" id="branch">
+        <option value="DS">DS</option>
+        <option value="AI">AI</option>
+        <option value="CS">CS</option>
+        <option value="IT">IT</option>
+        <option value="IOT">IOT</option>
+        <option value="ME">ME</option>
+        <option value="CE">CE</option>
+    </select>
+
+</div>
+<br>
+<button type="submit">SUBMIT</button>
+
+</form>
+</center>
+
+</body>
+</html>
